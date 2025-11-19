@@ -17,7 +17,7 @@ jobs:
     name: Build APKs
     runs-on: ubuntu-22.04
     container:
-      image: ghcr.io/${{ github.repository }}/opencv-builder:4.11.0
+      image: ghcr.io/novasamatech/parity-signer/opencv-builder:4.11.0
     outputs:
       build-tool-version: ${{ steps.read-build-tool-version.outputs.build-tool-version }}
     steps:
